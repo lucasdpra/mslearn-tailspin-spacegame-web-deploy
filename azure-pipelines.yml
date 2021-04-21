@@ -67,6 +67,7 @@ stages:
 
 - stage: 'Staging'
   displayName: 'Deploy to the staging environment'
+  dependsOn: Build
   jobs:
   - job: RunLoadTests
     displayName: 'Run load tests'

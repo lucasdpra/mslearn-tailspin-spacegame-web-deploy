@@ -70,7 +70,6 @@ stages:
   dependsOn: Build
   jobs:
   - job: RunLoadTests
-    dependsOn: Build
     displayName: 'Run load tests'
     pool:
       vmImage: 'ubuntu-18.04'
